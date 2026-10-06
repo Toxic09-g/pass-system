@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>Связи посетителя — Досье</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+*{box-sizing:border-box}body{margin:0;width:1440px;height:900px;overflow:hidden;font-family:Commissioner,sans-serif;color:#15232B;background:linear-gradient(180deg,#DCE3E7,#CFD8DD)}
+.mono{font-family:'JetBrains Mono',monospace}
+.dlg{position:absolute;left:64px;top:36px;width:1312px;height:828px;border-radius:40px;background:#FFFFFF;box-shadow:0 40px 80px -40px rgba(21,35,43,.45);display:grid;grid-template-columns:400px 1fr;overflow:hidden}
+.chip{height:40px;padding:0 16px;border-radius:999px;border:0;background:#E8EEF1;font:inherit;font-size:14px;color:#15232B}
+.on{background:#15232B;color:#fff}
+.st{padding:16px 18px;border-radius:22px;background:#fff}
+.k{font-size:13px;color:#5F6E77}.v{font-size:26px;font-weight:300;margin-top:2px}
+.hm{display:grid;grid-template-columns:repeat(26,1fr);grid-template-rows:repeat(7,1fr);grid-auto-flow:column;gap:5px;height:150px}
+.hm span{border-radius:5px;background:#EEF2F4}
+.hm .a{background:#0E6E62}.hm .b{background:#7DB5AC}
+.er{display:grid;grid-template-columns:48px 250px 1fr 60px 90px 24px;align-items:center;gap:16px;padding:14px 18px;border-radius:22px}
+.av{border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600}
+.bar{height:12px;border-radius:6px;background:#E8EEF1;overflow:hidden}.bar i{display:block;height:100%;border-radius:6px;background:#0E6E62}
+</style></head><body>
+<div class="dlg">
+  <aside style="background:#F4F7F8;padding:36px 32px;display:flex;flex-direction:column;align-items:center;gap:18px">
+    <div style="width:200px;height:200px;border-radius:50%;padding:6px;background:#fff;box-shadow:0 0 0 2px #0E6E62">
+      <div style="width:100%;height:100%;border-radius:50%;background:#E3D9F2;display:flex;align-items:flex-end;justify-content:center;overflow:hidden"><svg width="150" height="150" viewBox="0 0 24 24"><circle cx="12" cy="9" r="4.2" fill="#A48FC4"/><path d="M3 24c0-5 4-8 9-8s9 3 9 8z" fill="#A48FC4"/></svg></div>
+    </div>
+    <div style="text-align:center">
+      <div style="font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1.15">Сейткали Айгерим Нурлановна</div>
+      <div class="mono" style="font-size:13px;color:#5F6E77;margin-top:8px">ИИН 950412 400321</div>
+    </div>
+    <div style="display:flex;gap:8px"><span style="padding:7px 14px;border-radius:999px;background:#E8EEF1;font-size:13px;color:#5F6E77">Физ. лицо</span><span style="padding:7px 14px;border-radius:999px;background:#D6ECE8;font-size:13px;color:#0E6E62;font-weight:500">В здании · 12 мин</span></div>
+    <div style="width:100%;display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px">
+      <div class="st"><div class="k">Визитов</div><div class="v">9</div></div>
+      <div class="st"><div class="k">Сотрудников</div><div class="v">4</div></div>
+      <div class="st"><div class="k">Первый визит</div><div class="mono" style="font-size:16px;margin-top:6px">12.04.2026</div></div>
+      <div class="st"><div class="k">Средняя длительность</div><div class="mono" style="font-size:16px;margin-top:6px">42 мин</div></div>
+    </div>
+    <div style="flex:1"></div>
+    <button style="width:100%;height:56px;border-radius:999px;border:1px solid #DCE3E7;background:#fff;font:inherit;font-size:16px;color:#15232B">Показать все визиты в журнале</button>
+  </aside>
+  <main style="padding:30px 36px;display:flex;flex-direction:column;gap:22px;min-width:0">
+    <div style="display:flex;align-items:center;gap:10px">
+      <h1 style="margin:0;font-size:30px;font-weight:600;letter-spacing:-.02em">Связи посетителя</h1>
+      <span style="flex:1"></span>
+      <button class="chip">Месяц</button><button class="chip on">Полгода</button><button class="chip">Год</button><button class="chip">Всё время</button>
+      <button aria-label="Закрыть" style="width:44px;height:44px;border-radius:50%;border:0;background:#E8EEF1;margin-left:8px;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15232B" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <section style="display:flex;flex-direction:column;gap:10px">
+      <div style="display:flex;justify-content:space-between;font-size:14px;color:#5F6E77"><span>Визиты по дням</span><span style="display:flex;gap:10px;align-items:center">меньше <span style="width:14px;height:14px;border-radius:4px;background:#EEF2F4"></span><span style="width:14px;height:14px;border-radius:4px;background:#7DB5AC"></span><span style="width:14px;height:14px;border-radius:4px;background:#0E6E62"></span> больше</span></div>
+      <div class="hm">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span class="b"></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span class="b"></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span class="b"></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span class="b"></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span class="a"></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span class="b"></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span class="b"></span><span></span><span></span><span></span>
+        <span></span><span></span><span class="a"></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="mono" style="display:flex;justify-content:space-between;font-size:12px;color:#8FA0A9"><span>апр</span><span>май</span><span>июн</span><span>июл</span><span>авг</span><span>сен</span></div>
+    </section>
+    <section style="display:flex;flex-direction:column;gap:4px">
+      <div style="font-size:14px;color:#5F6E77;padding:0 18px 6px">К кому ходил · 4 сотрудника</div>
+      <div class="er" style="background:#fff;box-shadow:0 10px 30px -18px rgba(21,35,43,.35);outline:1.5px solid #D6ECE8">
+        <div class="av" style="width:48px;height:48px;background:#D6ECE8;color:#0E6E62">ЕД</div>
+        <div><div style="font-size:17px;font-weight:500">Ержанов Данияр К.</div><div style="font-size:13px;color:#5F6E77">Начальник отдела · Кадровая работа</div></div>
+        <div class="bar"><i style="width:100%"></i></div>
+        <div style="font-size:20px;font-weight:600;color:#0E6E62;text-align:right">5</div>
+        <div class="mono" style="font-size:13px;color:#8FA0A9;text-align:right">30.09.2026</div>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8FA0A9" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+      </div>
+      <div class="er">
+        <div class="av" style="width:48px;height:48px;background:#E8EEF1;color:#5F6E77">СА</div>
+        <div><div style="font-size:17px;font-weight:500">Смагулова Асель Б.</div><div style="font-size:13px;color:#5F6E77">Ст. следователь · Следственный</div></div>
+        <div class="bar"><i style="width:40%;background:#7DB5AC"></i></div>
+        <div style="font-size:20px;font-weight:600;text-align:right">2</div>
+        <div class="mono" style="font-size:13px;color:#8FA0A9;text-align:right">14.08.2026</div>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8FA0A9" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+      </div>
+      <div class="er">
+        <div class="av" style="width:48px;height:48px;background:#E8EEF1;color:#5F6E77">ПА</div>
+        <div><div style="font-size:17px;font-weight:500">Петров Андрей С.</div><div style="font-size:13px;color:#5F6E77">Инспектор · Адм. полиция</div></div>
+        <div class="bar"><i style="width:20%;background:#7DB5AC"></i></div>
+        <div style="font-size:20px;font-weight:600;text-align:right">1</div>
+        <div class="mono" style="font-size:13px;color:#8FA0A9;text-align:right">02.06.2026</div>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8FA0A9" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+      </div>
+      <div class="er">
+        <div class="av" style="width:48px;height:48px;background:#E8EEF1;color:#5F6E77">НТ</div>
+        <div><div style="font-size:17px;font-weight:500">Нурланов Тимур Е.</div><div style="font-size:13px;color:#5F6E77">Юрисконсульт · Юридический</div></div>
+        <div class="bar"><i style="width:20%;background:#7DB5AC"></i></div>
+        <div style="font-size:20px;font-weight:600;text-align:right">1</div>
+        <div class="mono" style="font-size:13px;color:#8FA0A9;text-align:right">12.04.2026</div>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8FA0A9" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+      </div>
+    </section>
+  </main>
+</div>
+</body></html>

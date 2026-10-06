@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>D · Табло — журнал</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+*{box-sizing:border-box}body{margin:0;width:1440px;height:900px;overflow:hidden;background:#FFFFFF;color:#0A0A0A;font-family:'IBM Plex Sans',sans-serif}
+.mono{font-family:'IBM Plex Mono',monospace}.cond{font-family:'IBM Plex Sans Condensed',sans-serif}
+header{height:88px;display:flex;align-items:center;padding:0 48px;border-bottom:6px solid #0A0A0A;gap:32px}
+button,input{font-family:inherit}
+.r{display:grid;grid-template-columns:130px 150px 1.5fr 1.2fr 1.1fr 200px;align-items:center;padding:0 48px;height:76px;border-bottom:2px solid #0A0A0A;font-size:22px}
+.h{height:48px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border-bottom:6px solid #0A0A0A}
+.in{background:#E0201B;color:#fff;font-weight:700;font-size:16px;letter-spacing:.12em;padding:10px 14px;justify-self:start}
+.out{font-family:'IBM Plex Mono';font-size:18px;color:#777}
+.dim{color:#777}
+</style></head><body>
+<header>
+  <span class="cond" style="font-size:28px;font-weight:700;letter-spacing:.02em">БЮРО ПРОПУСКОВ</span>
+  <nav style="display:flex;gap:28px;font-size:17px;font-weight:600"><a style="color:#0A0A0A;text-decoration:none;border-bottom:4px solid #E0201B;padding-bottom:4px">Журнал</a><a style="color:#777;text-decoration:none">Справочники</a></nav>
+  <span style="flex:1"></span>
+  <span class="mono" style="font-size:40px;font-weight:500">14:32</span>
+  <span style="font-size:15px">Сапаров И. М.</span>
+</header>
+<div style="display:flex;align-items:flex-end;gap:40px;padding:28px 48px 22px;border-bottom:2px solid #0A0A0A">
+  <h1 class="cond" style="margin:0;font-size:96px;line-height:.9;font-weight:700">ЖУРНАЛ</h1>
+  <div style="display:flex;gap:40px;padding-bottom:6px">
+    <div><div class="cond" style="font-size:48px;font-weight:700;line-height:1">47</div><div style="font-size:13px;letter-spacing:.14em;font-weight:600">ЗА ДЕНЬ</div></div>
+    <div><div class="cond" style="font-size:48px;font-weight:700;line-height:1;color:#E0201B">12</div><div style="font-size:13px;letter-spacing:.14em;font-weight:600">ВНУТРИ</div></div>
+  </div>
+  <span style="flex:1"></span>
+  <div style="display:flex;border:2px solid #0A0A0A;margin-bottom:6px">
+    <button style="height:56px;padding:0 22px;border:0;border-right:2px solid #0A0A0A;background:#0A0A0A;color:#fff;font-size:17px;font-weight:600">Сегодня</button>
+    <button style="height:56px;padding:0 22px;border:0;border-right:2px solid #0A0A0A;background:#fff;font-size:17px;font-weight:600">Неделя</button>
+    <button style="height:56px;padding:0 22px;border:0;background:#fff;font-size:17px;font-weight:600">Всё</button>
+  </div>
+  <label style="display:flex;align-items:center;gap:12px;width:340px;height:60px;border:2px solid #0A0A0A;padding:0 16px;margin-bottom:6px"><span style="font-size:22px">⌕</span><input placeholder="ФИО, ИИН, сотрудник" style="border:0;outline:0;font-size:18px;width:100%"></label>
+</div>
+<div class="r h"><span>Время</span><span>№</span><span>Посетитель</span><span>К кому</span><span>Управление</span><span>Статус</span></div>
+<div class="r"><span class="mono" style="font-size:30px">14:32</span><span class="mono">000418</span><span style="font-weight:600">Сейткали А. Н.</span><span>Ержанов Д. К.</span><span>Кадровая работа</span><span class="in">ВНУТРИ</span></div>
+<div class="r"><span class="mono" style="font-size:30px">11:34</span><span class="mono">000417</span><span style="font-weight:600">Жумабеков А. С.</span><span>Петров А. С.</span><span>Адм. полиция</span><span class="in">ВНУТРИ</span></div>
+<div class="r dim"><span class="mono" style="font-size:30px">10:17</span><span class="mono">000416</span><span style="font-weight:600">ТОО «Астана Логистик»</span><span>Смагулова А. Б.</span><span>Следственный</span><span class="out">вышел 11:02</span></div>
+<div class="r"><span class="mono" style="font-size:30px">09:02</span><span class="mono">000415</span><span style="font-weight:600">Ахметова Д. М.</span><span>Ержанов Д. К.</span><span>Кадровая работа</span><span class="in">ВНУТРИ</span></div>
+<div class="r dim"><span class="mono" style="font-size:30px">08:48</span><span class="mono">000414</span><span style="font-weight:600">Ли В. А.</span><span>Смагулова А. Б.</span><span>Следственный</span><span class="out">вышел 09:40</span></div>
+<div class="r dim"><span class="mono" style="font-size:30px">08:15</span><span class="mono">000413</span><span style="font-weight:600">Каримова С. Е.</span><span>Петров А. С.</span><span>Адм. полиция</span><span class="out">вышла 08:57</span></div>
+<div class="r dim" style="border-bottom:0"><span class="mono" style="font-size:30px">08:02</span><span class="mono">000412</span><span style="font-weight:600">Омаров Б. Н.</span><span>Ержанов Д. К.</span><span>Кадровая работа</span><span class="out">вышел 08:40</span></div>
+</body></html>

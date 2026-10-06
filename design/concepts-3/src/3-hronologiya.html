@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>Связи посетителя — Хронология</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+*{box-sizing:border-box}body{margin:0;width:1440px;height:900px;overflow:hidden;font-family:Commissioner,sans-serif;color:#15232B;background:linear-gradient(180deg,#DCE3E7,#CFD8DD)}
+.mono{font-family:'JetBrains Mono',monospace}
+.dlg{position:absolute;left:64px;top:36px;width:1312px;height:828px;border-radius:40px;background:#FFFFFF;box-shadow:0 40px 80px -40px rgba(21,35,43,.45);display:flex;flex-direction:column;overflow:hidden}
+.chip{height:40px;padding:0 16px;border-radius:999px;border:0;background:#E8EEF1;font:inherit;font-size:14px;color:#15232B}
+.on{background:#15232B;color:#fff}
+.lane{display:grid;grid-template-columns:300px 1fr 70px;align-items:center;height:96px;border-bottom:1px solid #EEF2F4}
+.who{display:flex;align-items:center;gap:14px;padding-left:36px}
+.av{border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;flex-shrink:0}
+.track{position:relative;height:100%}
+.track:before{content:'';position:absolute;left:0;right:0;top:50%;height:2px;background:#EEF2F4}
+.dot{position:absolute;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:#0E6E62;box-shadow:0 0 0 4px #fff}
+.dot.m{background:#7DB5AC}
+.n{font-size:20px;font-weight:600;text-align:center}
+</style></head><body>
+<div class="dlg">
+  <div style="display:flex;align-items:center;gap:16px;padding:26px 36px 22px">
+    <div class="av" style="width:56px;height:56px;background:#E3D9F2;overflow:hidden;align-items:flex-end;box-shadow:0 0 0 2px #fff,0 0 0 4px #0E6E62"><svg width="46" height="46" viewBox="0 0 24 24"><circle cx="12" cy="9" r="4.2" fill="#A48FC4"/><path d="M3 24c0-5 4-8 9-8s9 3 9 8z" fill="#A48FC4"/></svg></div>
+    <div><div style="font-size:24px;font-weight:600;letter-spacing:-.02em">Сейткали Айгерим Нурлановна</div><div style="font-size:14px;color:#5F6E77"><span class="mono">ИИН 950412 400321</span> · 9 визитов к 4 сотрудникам за полгода</div></div>
+    <span style="flex:1"></span>
+    <button class="chip">Месяц</button><button class="chip on">Полгода</button><button class="chip">Год</button><button class="chip">Всё время</button>
+    <button aria-label="Закрыть" style="width:44px;height:44px;border-radius:50%;border:0;background:#E8EEF1;margin-left:8px;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15232B" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+
+  <div style="position:relative;flex:1;display:flex;flex-direction:column;border-top:1px solid #EEF2F4">
+    <div style="position:absolute;left:300px;right:70px;top:0;bottom:0;display:grid;grid-template-columns:repeat(6,1fr);pointer-events:none">
+      <span style="border-left:1px dashed #E3E9EC"></span><span style="border-left:1px dashed #E3E9EC"></span><span style="border-left:1px dashed #E3E9EC"></span><span style="border-left:1px dashed #E3E9EC"></span><span style="border-left:1px dashed #E3E9EC"></span><span style="border-left:1px dashed #E3E9EC;border-right:1px dashed #E3E9EC"></span>
+    </div>
+    <div class="lane" style="height:52px"><span style="padding-left:36px;font-size:13px;color:#8FA0A9">Сотрудник</span>
+      <div class="mono" style="display:grid;grid-template-columns:repeat(6,1fr);font-size:12px;color:#8FA0A9"><span style="padding-left:10px">апрель</span><span style="padding-left:10px">май</span><span style="padding-left:10px">июнь</span><span style="padding-left:10px">июль</span><span style="padding-left:10px">август</span><span style="padding-left:10px">сентябрь</span></div>
+      <span style="font-size:13px;color:#8FA0A9;text-align:center">Всего</span></div>
+
+    <div class="lane" style="background:linear-gradient(90deg,#F4F7F8,rgba(244,247,248,0))">
+      <div class="who"><div class="av" style="width:48px;height:48px;background:#D6ECE8;color:#0E6E62">ЕД</div><div><div style="font-size:17px;font-weight:500">Ержанов Д. К.</div><div style="font-size:13px;color:#5F6E77">Кадровая работа</div></div></div>
+      <div class="track"><span class="dot" style="left:30%"></span><span class="dot" style="left:52%"></span><span class="dot" style="left:77%"></span><span class="dot" style="left:88%"></span><span class="dot" style="left:99%;width:26px;height:26px;margin:-13px 0 0 -13px;box-shadow:0 0 0 4px #fff,0 0 0 6px #0E6E62"></span></div>
+      <span class="n" style="color:#0E6E62">5</span></div>
+    <div class="lane">
+      <div class="who"><div class="av" style="width:48px;height:48px;background:#E8EEF1;color:#5F6E77">СА</div><div><div style="font-size:17px;font-weight:500">Смагулова А. Б.</div><div style="font-size:13px;color:#5F6E77">Следственный</div></div></div>
+      <div class="track"><span class="dot m" style="left:62%"></span><span class="dot m" style="left:74%"></span></div>
+      <span class="n">2</span></div>
+    <div class="lane">
+      <div class="who"><div class="av" style="width:48px;height:48px;background:#E8EEF1;color:#5F6E77">ПА</div><div><div style="font-size:17px;font-weight:500">Петров А. С.</div><div style="font-size:13px;color:#5F6E77">Адм. полиция</div></div></div>
+      <div class="track"><span class="dot m" style="left:34%"></span></div>
+      <span class="n">1</span></div>
+    <div class="lane">
+      <div class="who"><div class="av" style="width:48px;height:48px;background:#E8EEF1;color:#5F6E77">НТ</div><div><div style="font-size:17px;font-weight:500">Нурланов Т. Е.</div><div style="font-size:13px;color:#5F6E77">Юридический</div></div></div>
+      <div class="track"><span class="dot m" style="left:7%"></span></div>
+      <span class="n">1</span></div>
+
+    <div style="flex:1"></div>
+    <div style="position:relative;margin:0 28px 28px;padding:18px 22px;border-radius:28px;background:#F4F7F8;display:flex;align-items:center;gap:20px">
+      <span style="width:12px;height:12px;border-radius:50%;background:#0E6E62;box-shadow:0 0 0 4px #D6ECE8"></span>
+      <div style="display:flex;flex-direction:column;gap:2px"><span class="mono" style="font-size:15px">30.09.2026 · 14:32 → сейчас</span><span style="font-size:14px;color:#5F6E77">к Ержанову Д. К., Управление кадровой работы · пропуск № 000418</span></div>
+      <span style="padding:7px 14px;border-radius:999px;background:#D6ECE8;font-size:13px;color:#0E6E62;font-weight:500">В здании · 12 мин</span>
+      <span style="flex:1"></span>
+      <button style="height:52px;padding:0 22px;border-radius:999px;border:1px solid #DCE3E7;background:#fff;font:inherit;font-size:15px;color:#15232B">Открыть в журнале</button>
+      <button style="height:52px;padding:0 22px;border-radius:999px;border:0;background:#0E6E62;color:#fff;font:inherit;font-size:15px;font-weight:600">Связи Ержанова →</button>
+    </div>
+  </div>
+</div>
+</body></html>

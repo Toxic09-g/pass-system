@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>F · Бейдж — журнал</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tektur:wght@500;600;700&family=Jost:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+*{box-sizing:border-box}body{margin:0;width:1440px;height:900px;overflow:hidden;font-family:Jost,sans-serif;color:#1F1F1D;background:#E6E3DD}
+.t{font-family:Tektur,sans-serif}.mono{font-family:'JetBrains Mono',monospace}
+button,input{font-family:inherit}
+.b{background:#fff;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 0 #CFCAC0}
+.bar{height:8px}.o{background:#FF5A1F}.g{background:#CFCAC0}
+.ph{height:120px;margin:14px 14px 0;border-radius:14px}
+.nm{font-family:Tektur;font-size:17px;font-weight:600;line-height:1.2;padding:12px 16px 0}
+.sb{font-size:13px;color:#77736B;padding:2px 16px 0}
+.ft{display:flex;justify-content:space-between;align-items:center;padding:12px 16px 14px;margin-top:auto}
+.tm{font-family:'JetBrains Mono';font-size:13px}
+.st{font-size:12px;font-weight:600;letter-spacing:.1em;padding:5px 9px;border-radius:8px}
+.in{background:#FFE6DC;color:#C73E0C}.out{background:#EFECE6;color:#77736B}
+</style></head><body>
+<header style="height:80px;display:flex;align-items:center;padding:0 40px;gap:18px">
+  <span class="t" style="font-size:22px;font-weight:700;letter-spacing:.04em">ПРОПУСК<span style="color:#FF5A1F">/</span>БЮРО</span>
+  <nav style="display:flex;gap:6px;margin-left:24px"><a style="padding:10px 18px;border-radius:12px;background:#1F1F1D;color:#fff;font-size:15px;font-weight:600;text-decoration:none">Журнал</a><a style="padding:10px 18px;border-radius:12px;color:#77736B;font-size:15px;text-decoration:none">Справочники</a></nav>
+  <span style="flex:1"></span>
+  <span class="t" style="font-size:32px;font-weight:600">14:32</span>
+  <span style="font-size:15px">Сапаров И. М.</span>
+</header>
+<div style="display:flex;align-items:center;gap:20px;padding:10px 40px 22px">
+  <span class="t" style="font-size:44px;font-weight:700">Сегодня</span>
+  <span style="display:flex;gap:8px;align-items:center"><span class="st in" style="font-size:14px;padding:8px 12px">12 ВНУТРИ</span><span class="st out" style="font-size:14px;padding:8px 12px">35 ВЫШЛИ</span></span>
+  <span style="flex:1"></span>
+  <button style="height:52px;padding:0 18px;border-radius:14px;border:0;background:#F4F2EE;font-size:15px">Период: сегодня ▾</button>
+  <label style="display:flex;align-items:center;gap:10px;width:320px;height:52px;border-radius:14px;background:#F4F2EE;padding:0 16px"><span style="color:#77736B">⌕</span><input placeholder="ФИО, ИИН, сотрудник" style="border:0;outline:0;background:transparent;font-size:16px;width:100%"></label>
+</div>
+<main style="display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;padding:0 40px">
+  <div class="b"><div class="bar o"></div><div class="ph" style="background:#E6DFF0"></div><div class="nm">Сейткали А. Н.</div><div class="sb">→ Ержанов Д. К.</div><div class="ft"><span class="tm">14:32</span><span class="st in">ВНУТРИ</span></div></div>
+  <div class="b"><div class="bar o"></div><div class="ph" style="background:#F0E3D6"></div><div class="nm">Жумабеков А. С.</div><div class="sb">→ Петров А. С.</div><div class="ft"><span class="tm">11:34</span><span class="st in">ВНУТРИ</span></div></div>
+  <div class="b"><div class="bar o"></div><div class="ph" style="background:#DCEBE4"></div><div class="nm">Ахметова Д. М.</div><div class="sb">→ Ержанов Д. К.</div><div class="ft"><span class="tm">09:02</span><span class="st in">5 Ч</span></div></div>
+  <div class="b" style="opacity:.75"><div class="bar g"></div><div class="ph" style="background:#EFECE6"></div><div class="nm">ТОО «Астана Логистик»</div><div class="sb">→ Смагулова А. Б.</div><div class="ft"><span class="tm">10:17</span><span class="st out">11:02</span></div></div>
+  <div class="b" style="opacity:.75"><div class="bar g"></div><div class="ph" style="background:#EFECE6"></div><div class="nm">Ли В. А.</div><div class="sb">→ Смагулова А. Б.</div><div class="ft"><span class="tm">08:48</span><span class="st out">09:40</span></div></div>
+  <div class="b" style="opacity:.75"><div class="bar g"></div><div class="ph" style="background:#EFECE6"></div><div class="nm">Каримова С. Е.</div><div class="sb">→ Петров А. С.</div><div class="ft"><span class="tm">08:15</span><span class="st out">08:57</span></div></div>
+  <div class="b" style="opacity:.75"><div class="bar g"></div><div class="ph" style="background:#EFECE6"></div><div class="nm">Омаров Б. Н.</div><div class="sb">→ Ержанов Д. К.</div><div class="ft"><span class="tm">08:02</span><span class="st out">08:40</span></div></div>
+  <div class="b" style="opacity:.75"><div class="bar g"></div><div class="ph" style="background:#EFECE6"></div><div class="nm">Нурланова Г. А.</div><div class="sb">→ Петров А. С.</div><div class="ft"><span class="tm">07:55</span><span class="st out">08:30</span></div></div>
+  <div class="b" style="opacity:.75"><div class="bar g"></div><div class="ph" style="background:#EFECE6"></div><div class="nm">Сергеев П. И.</div><div class="sb">→ Смагулова А. Б.</div><div class="ft"><span class="tm">07:40</span><span class="st out">08:12</span></div></div>
+  <div class="b" style="opacity:.75"><div class="bar g"></div><div class="ph" style="background:#EFECE6"></div><div class="nm">Тасмагамбетов Е.</div><div class="sb">→ Ержанов Д. К.</div><div class="ft"><span class="tm">07:31</span><span class="st out">08:05</span></div></div>
+  <div class="b" style="opacity:.75"><div class="bar g"></div><div class="ph" style="background:#EFECE6"></div><div class="nm">ИП «Бекзат»</div><div class="sb">→ Петров А. С.</div><div class="ft"><span class="tm">07:20</span><span class="st out">07:48</span></div></div>
+  <div class="b" style="opacity:.75"><div class="bar g"></div><div class="ph" style="background:#EFECE6"></div><div class="nm">Ким Р. В.</div><div class="sb">→ Смагулова А. Б.</div><div class="ft"><span class="tm">07:12</span><span class="st out">07:40</span></div></div>
+</main>
+</body></html>
